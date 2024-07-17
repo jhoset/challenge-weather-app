@@ -1,6 +1,13 @@
-# WisyWeatherApp
+<p align="center">
+  <a href="https://angular.dev/" target="blank">
+  <img src="https://blog.ninja-squad.com/assets/images/angular_gradient.png" width="200" alt="Angular Logo" /></a>
+  <a href="https://tailwindcss.com/" target="blank">
+  <img src="https://cdn3d.iconscout.com/3d/free/thumb/free-tailwind-css-11492968-9325303.png" width="200" alt="TailwindCSS Logo" /></a>
+  <a href="https://www.chartjs.org/" target="blank">
+  <img src="https://asset.brandfetch.io/idFdo8ulhr/idzj34qGQm.png" width="190" alt="Angular Material UI Logo" /></a>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+<h1> <p align="center"> Weather App </p></h1> 
 
 ## Development server
 
