@@ -1,0 +1,38 @@
+<div class="p-4">
+
+  <div class="flex gap-4 items-center justify-center">
+    <img class="h-20" src="assets/weather.png" alt="Weather Logo">
+    <img class="h-8" src="assets/wisy-logo.png" alt="Wisy Logo">
+  </div>
+
+  <h1 class="text-center text-3xl font-bold text-primary"> Weather Forecast </h1>
+
+  <hr class="my-4">
+
+  <div class="flex gap-4 flex-col md:flex-row items-center justify-center">
+
+
+    @for (menuItem of menuItems; track menuItem.weatherOfficeId){
+      <div class="w-[200px] bg-white border rounded-lg shadow-md">
+        <img [style]="{ 'view-transition-name': menuItem.weatherOfficeId }"
+             class="rounded-t-lg w-full h-[125px]" [src]="menuItem.imgUrl" alt="" />
+        <div class="p-5">
+          <a href="#">
+            <h5
+              [style]="{ 'view-transition-name': 'title' + menuItem.weatherOfficeId }"
+              class="mb-2 text-2xl font-semibold  text-center text-gray-900">{{ menuItem.locationName }}</h5>
+          </a>
+          <div class="flex justify-center">
+            <a [routerLink]="['/weather', menuItem.weatherOfficeId]" class="inline-flex select-none cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg focus:ring-2 focus:outline-none focus:ring-primary/30  hover:bg-[#08355e]">
+              See Forecast
+            </a>
+          </div>
+        </div>
+      </div>
+    } @empty {
+      <p> No records available </p>
+    }
+
+
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="flex flex-col gap-4">
+  <img [style]="{ 'view-transition-name': officeId }"
+       class="relative rounded-t-lg h-[153px] w-full object-cover"
+       [src]="itemSelected.imgUrl" alt="Banner"/>
+  <h1
+    [style]="{ 'view-transition-name': 'title' + officeId }"
+    class="mb-2 text-4xl font-bold  text-center text-primary">
+    {{ itemSelected.locationName }}
+  </h1>
+  <hr class="my-2">
+  <div class="p-4">
+    <app-line-chart class="flex" [labels]="chartLabels" [datasets]="chartDatasets" ></app-line-chart>
+  </div>
+
+
+</div>
